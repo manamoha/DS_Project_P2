@@ -1,0 +1,20 @@
+2025-04-29 15:42:34,748 - INFO - Running D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\load_data.py
+2025-04-29 15:42:36,030 - INFO - Successfully loaded metadata from DogImages.db
+2025-04-29 15:42:36,030 - INFO - Data loaded from DogImages.db with 2000 records
+2025-04-29 15:42:36,047 - INFO - Raw data saved to raw_data.csv
+2025-04-29 15:42:36,799 - INFO - Successfully executed D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\load_data.py
+2025-04-29 15:42:36,809 - INFO - Running D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\preprocess.py
+2025-04-29 15:42:39,396 - INFO - Successfully loaded metadata from DogImages.db
+2025-04-29 15:42:39,396 - INFO - Data loaded from DogImages.db with 2000 records
+2025-04-29 15:42:39,409 - INFO - Raw data saved to raw_data.csv
+2025-04-29 15:42:39,466 - INFO - Missing images: 0
+2025-04-29 15:42:39,466 - INFO - Breed classes: ['Dalmatian', 'Golden Retriever', 'Pug', 'Rottweiler']
+2025-04-29 15:42:39,495 - INFO - Dataset splits saved to dataset_splits.csv
+2025-04-29 15:42:39,501 - INFO - Dataset prepared:
+Training set: 1400 samples
+Validation set: 300 samples
+Test set: 300 samples
+2025-04-29 15:42:40,160 - INFO - Successfully executed D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\preprocess.py
+2025-04-29 15:42:40,160 - INFO - Running D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\feature_engineering.py
+2025-04-29 15:42:53,651 - INFO - Data augmentation configured and saved to augmentation_config.txt
+2025-04-29 15:42:55,255 - INFO - Successfully executed D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\feature_engineering.py
