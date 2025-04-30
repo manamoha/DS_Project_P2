@@ -18,3 +18,31 @@ Test set: 300 samples
 2025-04-29 15:42:40,160 - INFO - Running D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\feature_engineering.py
 2025-04-29 15:42:53,651 - INFO - Data augmentation configured and saved to augmentation_config.txt
 2025-04-29 15:42:55,255 - INFO - Successfully executed D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\feature_engineering.py
+2025-04-30 08:32:17,420 - INFO - Running D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\load_data.py
+2025-04-30 08:32:18,696 - ERROR - Failed to connect to database DogImages.db: Execution failed on sql 'SELECT Breed, Image_File_Path FROM DogImages': no such table: DogImages
+2025-04-30 08:32:18,696 - ERROR - Failed to load data from DogImages.db: Execution failed on sql 'SELECT Breed, Image_File_Path FROM DogImages': no such table: DogImages
+2025-04-30 08:32:33,219 - ERROR - Failed to execute D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\load_data.py: Command '['c:\\Users\\manam\\AppData\\Local\\Programs\\Python\\Python311\\python.exe', 'D:\\university\\sem 8\\Data\\Final Project\\Project_P2_810100207_810100247_810102480\\scripts\\load_data.py']' returned non-zero exit status 1.
+2025-04-30 08:32:46,468 - INFO - Running D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\load_data.py
+2025-04-30 08:32:47,774 - ERROR - Failed to connect to database DogImages.db: Execution failed on sql 'SELECT Breed, Image_File_Path FROM DogImages': no such table: DogImages
+2025-04-30 08:32:47,774 - ERROR - Failed to load data from DogImages.db: Execution failed on sql 'SELECT Breed, Image_File_Path FROM DogImages': no such table: DogImages
+2025-04-30 08:33:02,298 - ERROR - Failed to execute D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\load_data.py: Command '['c:\\Users\\manam\\AppData\\Local\\Programs\\Python\\Python311\\python.exe', 'D:\\university\\sem 8\\Data\\Final Project\\Project_P2_810100207_810100247_810102480\\scripts\\load_data.py']' returned non-zero exit status 1.
+2025-04-30 08:34:24,561 - INFO - Running D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\load_data.py
+2025-04-30 08:34:25,870 - INFO - Successfully loaded metadata from database/DogImages.db
+2025-04-30 08:34:25,873 - INFO - Data loaded from database/DogImages.db with 2000 records
+2025-04-30 08:34:25,889 - INFO - Raw data saved to raw_data.csv
+2025-04-30 08:34:26,640 - INFO - Successfully executed D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\load_data.py
+2025-04-30 08:34:26,640 - INFO - Running D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\preprocess.py
+2025-04-30 08:34:37,005 - INFO - Successfully loaded metadata from database/DogImages.db
+2025-04-30 08:34:37,015 - INFO - Data loaded from database/DogImages.db with 2000 records
+2025-04-30 08:34:37,025 - INFO - Raw data saved to raw_data.csv
+2025-04-30 08:34:37,172 - INFO - Missing images: 0
+2025-04-30 08:34:37,176 - INFO - Breed classes: ['Dalmatian', 'Golden Retriever', 'Pug', 'Rottweiler']
+2025-04-30 08:34:37,200 - INFO - Dataset splits saved to dataset_splits.csv
+2025-04-30 08:34:37,206 - INFO - Dataset prepared:
+Training set: 1400 samples
+Validation set: 300 samples
+Test set: 300 samples
+2025-04-30 08:34:38,063 - INFO - Successfully executed D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\preprocess.py
+2025-04-30 08:34:38,064 - INFO - Running D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\feature_engineering.py
+2025-04-30 08:34:55,448 - INFO - Data augmentation configured and saved to augmentation_config.txt
+2025-04-30 08:34:56,829 - INFO - Successfully executed D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480\scripts\feature_engineering.py
