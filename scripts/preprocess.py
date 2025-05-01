@@ -15,7 +15,6 @@ logging.basicConfig(filename='training_log.log', level=logging.INFO,
 def preprocess_data(db_path='database/DogImages.db'):
     df = load_data(db_path)
     
-    # Skip image existence check in CI environment
     if os.getenv('CI') != 'true':
         df['Image_Exists'] = df['Image_File_Path'].apply(os.path.exists)
         missing_count = len(df[~df['Image_Exists']])
@@ -26,41 +25,33 @@ def preprocess_data(db_path='database/DogImages.db'):
         logging.info("Skipping image existence check in CI environment")
         print("Skipping image existence check in CI environment")
     
-    # Check if DataFrame is empty
     if df.empty:
         logging.error("DataFrame is empty after preprocessing")
         raise ValueError("DataFrame is empty after preprocessing")
     
-    # Encode Breed labels
     label_encoder = LabelEncoder()
     df['Label'] = label_encoder.fit_transform(df['Breed'])
     logging.info(f"Breed classes: {list(label_encoder.classes_)}")
     print("Breed classes:", label_encoder.classes_)
     
-    # Split dataset: 70% train, 15% val, 15% test
     train_df, temp_df = train_test_split(df, test_size=0.3, random_state=42, stratify=df['Breed'])
     val_df, test_df = train_test_split(temp_df, test_size=0.5, random_state=42, stratify=temp_df['Breed'])
     
-    # Assign set labels
     train_df = train_df.assign(Set='train')
     val_df = val_df.assign(Set='val')
     test_df = test_df.assign(Set='test')
     
-    # Combine into single DataFrame
     dataset_df = pd.concat([train_df, val_df, test_df], ignore_index=True)
     
-    # Save dataset splits
     dataset_df.to_csv('dataset_splits.csv', index=False)
     logging.info("Dataset splits saved to dataset_splits.csv")
     print("Dataset splits saved to dataset_splits.csv")
     
-    # Save encoded labels
     np.save('y_train.npy', train_df['Label'].values)
     np.save('y_val.npy', val_df['Label'].values)
     np.save('y_test.npy', test_df['Label'].values)
     np.save('label_classes.npy', label_encoder.classes_)
     
-    # Log and print dataset summary
     summary = (f"Dataset prepared:\n"
                f"Training set: {len(train_df)} samples\n"
                f"Validation set: {len(val_df)} samples\n"

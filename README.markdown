@@ -37,7 +37,7 @@ This project implements a data pipeline for processing dog breed image metadata 
   - opencv-python==4.10.0.84
 
 ## Setup
-1. Clone the repository or unzip the project to a local directory (e.g., `D:\university\sem 8\Data\Final Project\Project_P2_810100207_810100247_810102480`).
+1. Clone the repository or unzip the project to a local directory.
 2. Ensure `DogImages.db` is in the `database` folder.
 3. Install dependencies:
    ```bash
@@ -50,15 +50,6 @@ This project implements a data pipeline for processing dog breed image metadata 
   python scripts\import_to_db.py
   ```
   This script imports metadata into `DogImages.db` in the `database` folder.
-
-## Running SQL Queries
-- To execute predefined SQL queries on `DogImages.db` and generate results:
-  ```bash
-  python run_queries.py
-  ```
-- **Output**:
-  - `query_results.txt`: Summary of query results.
-  - `query_1_results.csv` to `query_5_results.csv`: Detailed query outputs.
 
 ## Running the Pipeline
 Execute the data pipeline using:
@@ -98,7 +89,6 @@ python pipeline.py
 ## Notes
 - The pipeline assumes `DogImages.db` is in the `database` folder and contains a table named `DogImages` with columns `Breed` and `Image_File_Path`.
 - Execution time: Approximately 2–5 minutes on a standard CPU.
-- For CI/CD, a GitHub Actions workflow can be added (see `Section 4` of the project report).
 - Ensure image files referenced in `Image_File_Path` are accessible to avoid missing data during preprocessing.
 
 ## Authors
