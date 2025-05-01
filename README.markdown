@@ -12,7 +12,6 @@ This project implements a data pipeline for processing dog breed image metadata 
   - `feature_engineering.py`: Configures data augmentation and saves settings to `augmentation_config.txt`.
   - `import_to_db.py`: Imports data into the SQLite database (used for setup).
 - `pipeline.py`: Main script that sequentially executes `load_data.py`, `preprocess.py`, and `feature_engineering.py`.
-- `run_queries.py`: Executes SQL queries on the database and saves results to `query_results.txt` and `query_1_results.csv` to `query_5_results.csv`.
 - `requirements.txt`: List of required Python packages.
 - `README.md`: Project documentation.
 - **Output Files** (generated after running `pipeline.py`):
