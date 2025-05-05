@@ -2,8 +2,8 @@ import pandas as pd
 import sqlite3
 import os
 
-excel_file = "D:/university/sem 8/Data/Final Project/Project_P2_810100207_810100247_810102480/database/dog_images_data_table.xls"
-db_path = "D:/university/sem 8/Data/Final Project/Project_P2_810100207_810100247_810102480/database/DogImages.db"
+excel_file = "database/dog_images_data_table.xls"
+db_path = "database/DogImages.db"
 
 df = pd.read_excel(excel_file)
 
