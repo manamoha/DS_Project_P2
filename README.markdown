@@ -85,12 +85,7 @@ python pipeline.py
   - `augmentation_config.txt`: Data augmentation settings.
   - `training_log.log`: Execution logs.
 
-## Notes
-- The pipeline assumes `DogImages.db` is in the `database` folder and contains a table named `DogImages` with columns `Breed` and `Image_File_Path`.
-- Execution time: Approximately 2–5 minutes on a standard CPU.
-- Ensure image files referenced in `Image_File_Path` are accessible to avoid missing data during preprocessing.
-
 ## Authors
 - Student IDs: 810100207, 810100247, 810102480
 - Course: Data Science, Semester 8
-- Date: April 2025
+- Date: May 2025
